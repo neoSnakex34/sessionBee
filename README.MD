@@ -11,7 +11,7 @@ sessionBee is built on top of Node.Js and it uses Redis to store sessions and lo
 
 # what does it do? 
 When an e-obj is turned on it can establish a connection with the session handler (that is intended to communicate with other services to provide further interactions with the given obj).
-every e-obj (for instance a smart-radio) is provided with an identifier (nano-id is used instead of uuids) for the object and an identifier for the vendor (or other brand-specific info).
+Every e-obj (for instance a smart-radio) is provided with an identifier (nano-id is used instead of uuids) for the object and an identifier for the vendor (or other brand-specific info).
 As a proof of concept the session simulation is a toggler that simulates a bit flip [it sets on and off the object]. 
 
 # can it scale? 
