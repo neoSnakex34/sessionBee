@@ -7,7 +7,7 @@ While it is modeled as a microservice it lacks some fundamentals like strong aut
 here's the "servicy" in the title. 
 
 # what technology stack it uses? 
-sessionBee is built on top of Node.Js and it uses Redis to store sessions and logs. 
+sessionBee is built on top of Node.Js (express.js) and it uses Redis to store sessions and logs. 
 
 # what does it do? 
 When an e-obj is turned on it can establish a connection with the session handler (that is intended to communicate with other services to provide further interactions with the given obj).
