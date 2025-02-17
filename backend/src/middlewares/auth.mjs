@@ -9,7 +9,7 @@ export default async function authMiddleware(req, res, next) {
         const objId  = req.params['objId']; 
         const rawClientHash = req.headers['authorization'];
         const clientHash = rawClientHash.split(" ")[1]
-        console.log(clientHash)
+
         if (!clientHash || !objId) {
             console.log('could not authenticate because of missing parameters')
             return res.status(403).json('could not authenticate: objId and authorization token needed to start authentication');
