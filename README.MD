@@ -2,8 +2,19 @@
 ![an example](./pics/demo.png)
 
 # what is it? 
-sessionBee is what the name says, it is a session handler api [api is translated bees in italian, pun intended].
+sessionBee is what the name says, it is a session handler api [api is translated bees in italian, *pun intended*].
 While it is modeled as a microservice it lacks some fundamentals like strong auth and complete independence from other services, 
 here's the "servicy" in the title. 
 
+# what technology stack it uses? 
+sessionBee is built on top of Node.Js and it uses Redis to store sessions and logs. 
+
 # what does it do? 
+When an e-obj is turned on it can establish a connection with the session handler (that is intended to communicate with other services to provide further interactions with the given obj).
+every e-obj (for instance a smart-radio) is provided with an identifier (nano-id is used instead of uuids) for the object and an identifier for the vendor (or other brand-specific info).
+As a proof of concept the session simulation is a toggler that simulates a bit flip [it sets on and off the object]. 
+
+# can it scale? 
+Even though it has not been tested at scale [being it a demo] it should be kinda scalable since it's really simple and it relies on top of scalable tech like Redis, this does not mean that it can *ever* be considered 
+anything like a production-ready software. 
+
