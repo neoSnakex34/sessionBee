@@ -14,6 +14,9 @@ When an e-obj is turned on it can establish a connection with the session handle
 Every e-obj (for instance a smart-radio) is provided with an identifier (nano-id is used instead of uuids) for the object and an identifier for the vendor (or other brand-specific info).
 As a proof of concept the session simulation is a toggler that simulates a bit flip [it sets on and off the object]. 
 
+# about session duration 
+For the moment sessions can only be terminated by api calls or removing them from redis table, in a real world use-case one should add a timeout for a session. 
+
 # can it scale? 
 Even though it has not been tested at scale [being a demo] it has been designed with scalability in mind. It should be kinda scalable since it has really simple logic and it relies on top of scalable tech like Redis.
 This does not mean that it can *ever* be considered anything like a production-ready software. 
