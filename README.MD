@@ -2,7 +2,7 @@
 ![an example](./pics/demo.png)
 
 # what is it? 
-sessionBee is what the name says, it is a session handler api [api is translated bees in italian, *pun intended*].
+sessionBee is what the name says, it is a session handler api [italian word api is translated in bees, *pun intended*].
 While it is modeled as a microservice it lacks some fundamentals like strong auth and complete independence from other services, 
 here's the "servicy" in the title. 
 
@@ -15,6 +15,6 @@ Every e-obj (for instance a smart-radio) is provided with an identifier (nano-id
 As a proof of concept the session simulation is a toggler that simulates a bit flip [it sets on and off the object]. 
 
 # can it scale? 
-Even though it has not been tested at scale [being it a demo] it should be kinda scalable since it's really simple and it relies on top of scalable tech like Redis, this does not mean that it can *ever* be considered 
-anything like a production-ready software. 
+Even though it has not been tested at scale [being a demo] it has been designed with scalability in mind. It should be kinda scalable since it has really simple logic and it relies on top of scalable tech like Redis.
+This does not mean that it can *ever* be considered anything like a production-ready software. 
 
