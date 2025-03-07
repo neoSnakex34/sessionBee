@@ -19,5 +19,5 @@ For the moment sessions can only be terminated by api calls or removing them fro
 
 # can it scale? 
 Even though it has not been tested at scale [being a demo] it has been designed with scalability in mind. It should be kinda scalable since it has really simple logic and it relies on top of scalable tech like Redis.
-This does not mean that it can *ever* be considered anything like a production-ready software. 
+This does not mean that it should *ever* be considered anything like a production-ready software. 
 
