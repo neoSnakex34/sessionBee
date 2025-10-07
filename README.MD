@@ -6,7 +6,7 @@ sessionBee is what the name says, it is a session handler api [italian word api 
 While it is modeled as a microservice it lacks some fundamentals like strong auth and complete independence from other services, 
 here's the "servicy" in the title. 
 
-# what technology stack it uses? 
+# what technology stack does it use? 
 sessionBee is built on top of Node.Js (express.js) and it uses Redis to store sessions and logs. 
 
 # what does it do? 
